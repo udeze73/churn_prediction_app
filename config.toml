@@ -1,0 +1,8 @@
+[theme]
+# Optional visual theming — Streamlit Cloud reads this automatically.
+# Safe to delete this whole file if you'd rather use Streamlit's default theme.
+primaryColor = "#E63946"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F1F1F1"
+textColor = "#262730"
+font = "sans serif"
