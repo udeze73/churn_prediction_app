@@ -1,6 +1,5 @@
 {
   "name": "Python 3.14",
-  // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
   "image": "mcr.microsoft.com/devcontainers/python:1.0-3.14-bookworm",
   "customizations": {
     "codespaces": {
@@ -21,6 +20,7 @@
   "postAttachCommand": {
     "server": "UV_BIN=$(command -v uv || echo \"$HOME/.local/bin/uv\"); UV_PROJECT_ENVIRONMENT=\"$HOME/.venvs/blank-app-template\" \"$UV_BIN\" run streamlit run streamlit_app.py --server.enableCORS false --server.enableXsrfProtection false"
   },
+  "postStartCommand": "streamlit run streamlit_app.py --server.port 8501 --server.address 0.0.0.0",
   "portsAttributes": {
     "8501": {
       "label": "Application",
