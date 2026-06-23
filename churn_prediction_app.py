@@ -38,7 +38,7 @@ def load_artifacts():
     # `streamlit run app.py` from. If you get FileNotFoundError,
     # that's almost always the cause — check your terminal's
     # current directory with `pwd` (Mac/Linux) or `cd` (Windows).
-    bundle = joblib.load('chun_model_bundle.pkl')
+    bundle = joblib.load('churn_model_bundle.pkl')
     shap_artifacts = joblib.load('shap_artifacts.pkl')
     return bundle, shap_artifacts
 
